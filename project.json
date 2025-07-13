@@ -69,6 +69,15 @@
 				"type" : "slider",
 				"value" : 46
 			},
+			"drawHitboxes" : 
+			{
+				"condition" : "mouseactions.value == true",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Interactive Area",
+				"type" : "bool",
+				"value" : false
+			},
 			"fireworks" : 
 			{
 				"index" : 13,
@@ -236,7 +245,7 @@
 	"tags" : [ "Anime" ],
 	"title" : "Blue Archive | Shirasu Azusa",
 	"type" : "Web",
-	"version" : 7,
+	"version" : 8,
 	"visibility" : "public",
 	"workshopid" : "3495955811",
 	"workshopurl" : "steam://url/CommunityFilePage/3495955811"
