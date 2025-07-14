@@ -9,10 +9,10 @@
 			"bgmvolume" : 
 			{
 				"fraction" : false,
-				"index" : 13,
+				"index" : 14,
 				"max" : 100,
 				"min" : 0,
-				"order" : 113,
+				"order" : 114,
 				"text" : "BGM Volume",
 				"type" : "slider",
 				"value" : 20
@@ -45,10 +45,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true",
 				"fraction" : true,
-				"index" : 7,
+				"index" : 8,
 				"max" : 100,
 				"min" : 0,
-				"order" : 107,
+				"order" : 108,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "DialogX",
@@ -59,10 +59,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true",
 				"fraction" : true,
-				"index" : 8,
+				"index" : 9,
 				"max" : 100,
 				"min" : 0,
-				"order" : 108,
+				"order" : 109,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "DialogY",
@@ -72,16 +72,16 @@
 			"drawHitboxes" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 15,
-				"order" : 115,
+				"index" : 17,
+				"order" : 117,
 				"text" : "Interactive Area",
 				"type" : "bool",
 				"value" : false
 			},
 			"fireworks" : 
 			{
-				"index" : 13,
-				"order" : 113,
+				"index" : 15,
+				"order" : 115,
 				"text" : "Fireworks Effect",
 				"type" : "bool",
 				"value" : true
@@ -89,7 +89,7 @@
 			"fireworkstheme" : 
 			{
 				"condition" : "fireworks.value == true",
-				"index" : 14,
+				"index" : 16,
 				"options" : 
 				[
 					{
@@ -105,7 +105,7 @@
 						"value" : "system"
 					}
 				],
-				"order" : 114,
+				"order" : 116,
 				"text" : "Fireworks Theme",
 				"type" : "combo",
 				"value" : "system"
@@ -113,8 +113,8 @@
 			"headpatting" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 11,
-				"order" : 111,
+				"index" : 12,
+				"order" : 112,
 				"text" : "Headpatting",
 				"type" : "bool",
 				"value" : true
@@ -123,10 +123,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true && introanimation.value == true",
 				"fraction" : true,
-				"index" : 9,
+				"index" : 10,
 				"max" : 100,
 				"min" : 0,
-				"order" : 109,
+				"order" : 110,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Intro Dialog X",
@@ -137,10 +137,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true && introanimation.value == true",
 				"fraction" : true,
-				"index" : 10,
+				"index" : 11,
 				"max" : 100,
 				"min" : 0,
-				"order" : 110,
+				"order" : 111,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Intro Dialog Y",
@@ -166,8 +166,8 @@
 			"mousetracking" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 12,
-				"order" : 112,
+				"index" : 13,
+				"order" : 113,
 				"text" : "Mouse Tracking",
 				"type" : "bool",
 				"value" : true
@@ -177,7 +177,7 @@
 				"fraction" : true,
 				"index" : 0,
 				"max" : 2,
-				"min" : 0.8,
+				"min" : 0.7,
 				"order" : 100,
 				"precision" : 3,
 				"step" : 0.01,
@@ -244,8 +244,8 @@
 	"snapshotoverlay" : "",
 	"tags" : [ "Anime" ],
 	"title" : "Blue Archive | Shirasu Azusa",
-	"type" : "Web",
-	"version" : 8,
+	"type" : "web",
+	"version" : 9,
 	"visibility" : "public",
 	"workshopid" : "3495955811",
 	"workshopurl" : "steam://url/CommunityFilePage/3495955811"
