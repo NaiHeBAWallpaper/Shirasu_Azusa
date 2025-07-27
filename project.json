@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "A live2D web wallpaper for Blue Archive.",
+	"description" : "[h1][b] A live2D web wallpaper for Blue Archive [/b][/h1]\n\n[hr][/hr]\n\n[h1]Custom Features[/h1]\n\n[list]\n [*][b]Scale[/b]\n [*][b]Model Resolution[/b] (2K, 4K, 8K)\n [*][b]Target FPS[/b]\n [*][b]Intro Animation[/b]\n [*][b]Dialog[/b]\n [*][b]Headpatting[/b]\n [*][b]Mouse Tracking[/b] (Eye Movement Following Cursor)\n [*][b]Fireworks Effect[/b] on Mouse Click\n [*][b]Background Music (BGM)[/b]\n [*][b]Voiceline Volume Control[/b]\n [/list]\n\nSupports dialog text in [b]Japanese[/b], [b]English[/b], and [b]Simplified Chinese[/b].\n\n[hr][/hr]\n\n[h1]Implementation[/h1]\n\n[list]\n [*]Uses [url=https://github.com/EsotericSoftware/spine-runtimes]spine-webgl[/url] to render Spine models\n [*]Uses [url=https://github.com/nihui/realcugan-ncnn-vulkan]realcugan-ncnn-vulkan[/url] for 4x upscaling (8192×8192) of model textures\n [/list]\n\n[hr][/hr]\n\n[h1]Thanks[/h1]\n [url=https://steamcommunity.com/workshop/filedetails/?id=2956165539]https://steamcommunity.com/workshop/filedetails/?id=2956165539[/url]\n\n[hr][/hr]\n\n[h1]Copyright[/h1]\n\n[quote]Blue Archive is a registered trademark of NAT GAMES Co., Ltd., NEXON Korea Corp., and Yostar, Inc.\n This project is not affiliated with, endorsed by, or connected to NAT GAMES Co., Ltd., NEXON Korea Corp., NEXON GAMES Co., Ltd., IODivision, Yostar, Inc., or any of their subsidiaries or affiliates.\n All game assets, content, and materials are copyrighted by their respective owners and are used for informational and educational purposes only.[/quote]",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -9,10 +9,10 @@
 			"bgmvolume" : 
 			{
 				"fraction" : false,
-				"index" : 14,
+				"index" : 15,
 				"max" : 100,
 				"min" : 0,
-				"order" : 114,
+				"order" : 115,
 				"text" : "BGM Volume",
 				"type" : "slider",
 				"value" : 20
@@ -20,7 +20,7 @@
 			"dialoglanguage" : 
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true",
-				"index" : 7,
+				"index" : 8,
 				"options" : 
 				[
 					{
@@ -36,7 +36,7 @@
 						"value" : "Chinese"
 					}
 				],
-				"order" : 107,
+				"order" : 108,
 				"text" : "Dialog Language",
 				"type" : "combo",
 				"value" : "Japanese"
@@ -45,10 +45,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true",
 				"fraction" : true,
-				"index" : 8,
+				"index" : 9,
 				"max" : 100,
 				"min" : 0,
-				"order" : 108,
+				"order" : 109,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "DialogX",
@@ -59,10 +59,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true",
 				"fraction" : true,
-				"index" : 9,
+				"index" : 10,
 				"max" : 100,
 				"min" : 0,
-				"order" : 109,
+				"order" : 110,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "DialogY",
@@ -72,16 +72,16 @@
 			"drawHitboxes" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 17,
-				"order" : 117,
+				"index" : 18,
+				"order" : 118,
 				"text" : "Interactive Area",
 				"type" : "bool",
 				"value" : false
 			},
 			"fireworks" : 
 			{
-				"index" : 15,
-				"order" : 115,
+				"index" : 16,
+				"order" : 116,
 				"text" : "Fireworks Effect",
 				"type" : "bool",
 				"value" : true
@@ -89,7 +89,7 @@
 			"fireworkstheme" : 
 			{
 				"condition" : "fireworks.value == true",
-				"index" : 16,
+				"index" : 17,
 				"options" : 
 				[
 					{
@@ -105,7 +105,7 @@
 						"value" : "system"
 					}
 				],
-				"order" : 116,
+				"order" : 117,
 				"text" : "Fireworks Theme",
 				"type" : "combo",
 				"value" : "system"
@@ -113,8 +113,8 @@
 			"headpatting" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 12,
-				"order" : 112,
+				"index" : 13,
+				"order" : 113,
 				"text" : "Headpatting",
 				"type" : "bool",
 				"value" : true
@@ -123,10 +123,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true && introanimation.value == true",
 				"fraction" : true,
-				"index" : 10,
+				"index" : 11,
 				"max" : 100,
 				"min" : 0,
-				"order" : 110,
+				"order" : 111,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Intro Dialog X",
@@ -137,10 +137,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true && showdialog.value == true && introanimation.value == true",
 				"fraction" : true,
-				"index" : 11,
+				"index" : 12,
 				"max" : 100,
 				"min" : 0,
-				"order" : 111,
+				"order" : 112,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Intro Dialog Y",
@@ -149,16 +149,39 @@
 			},
 			"introanimation" : 
 			{
-				"index" : 2,
-				"order" : 102,
+				"index" : 3,
+				"order" : 103,
 				"text" : "Intro Animation",
 				"type" : "bool",
 				"value" : true
 			},
+			"modelresolution" : 
+			{
+				"index" : 1,
+				"options" : 
+				[
+					{
+						"label" : "2K",
+						"value" : "2k"
+					},
+					{
+						"label" : "4K",
+						"value" : "4k"
+					},
+					{
+						"label" : "8K",
+						"value" : "8k"
+					}
+				],
+				"order" : 101,
+				"text" : "Model Resolution",
+				"type" : "combo",
+				"value" : "8k"
+			},
 			"mouseactions" : 
 			{
-				"index" : 3,
-				"order" : 103,
+				"index" : 4,
+				"order" : 104,
 				"text" : "Show Mouse Actions",
 				"type" : "bool",
 				"value" : false
@@ -166,8 +189,8 @@
 			"mousetracking" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 13,
-				"order" : 113,
+				"index" : 14,
+				"order" : 114,
 				"text" : "Mouse Tracking",
 				"type" : "bool",
 				"value" : true
@@ -183,7 +206,7 @@
 				"step" : 0.01,
 				"text" : "Scale",
 				"type" : "slider",
-				"value" : 0.82
+				"value" : 0.8
 			},
 			"schemecolor" : 
 			{
@@ -195,8 +218,8 @@
 			"showdialog" : 
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true",
-				"index" : 6,
-				"order" : 106,
+				"index" : 7,
+				"order" : 107,
 				"text" : "Show Dialog",
 				"type" : "bool",
 				"value" : true
@@ -204,10 +227,10 @@
 			"targetfps" : 
 			{
 				"fraction" : false,
-				"index" : 1,
+				"index" : 2,
 				"max" : 144,
 				"min" : 30,
-				"order" : 101,
+				"order" : 102,
 				"text" : "Target FPS",
 				"type" : "slider",
 				"value" : 60
@@ -215,8 +238,8 @@
 			"voicelines" : 
 			{
 				"condition" : "mouseactions.value == true",
-				"index" : 4,
-				"order" : 104,
+				"index" : 5,
+				"order" : 105,
 				"text" : "Voicelines",
 				"type" : "bool",
 				"value" : true
@@ -225,10 +248,10 @@
 			{
 				"condition" : "mouseactions.value == true && voicelines.value == true",
 				"fraction" : true,
-				"index" : 5,
+				"index" : 6,
 				"max" : 100,
 				"min" : 0,
-				"order" : 105,
+				"order" : 106,
 				"precision" : 2,
 				"step" : 0.1,
 				"text" : "Volume",
@@ -237,15 +260,13 @@
 			}
 		}
 	},
-	"preview" : "preview.jpg",
+	"preview" : "preview.gif",
 	"ratingsex" : "none",
 	"ratingviolence" : "none",
-	"snapshotformat" : -1,
-	"snapshotoverlay" : "",
 	"tags" : [ "Anime" ],
 	"title" : "Blue Archive | Shirasu Azusa",
-	"type" : "web",
-	"version" : 9,
+	"type" : "Web",
+	"version" : 12,
 	"visibility" : "public",
 	"workshopid" : "3495955811",
 	"workshopurl" : "steam://url/CommunityFilePage/3495955811"
