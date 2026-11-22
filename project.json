@@ -6,6 +6,23 @@
 	{
 		"properties" : 
 		{
+			"bapointer" : 
+			{
+				"index": 19,
+				"order": 119,
+				"text": "BA Pointer Style",
+				"type": "bool",
+				"value": true
+			},
+			"bapersistenttrail" : 
+			{
+				"condition": "fireworks.value == true && bapointer.value == true",
+				"index": 20,
+				"order": 120,
+				"text": "BA Pointer Persistent Trail",
+				"type": "bool",
+				"value": false
+			},
 			"bgmvolume" : 
 			{
 				"fraction" : false,
@@ -82,13 +99,13 @@
 			{
 				"index" : 16,
 				"order" : 116,
-				"text" : "Fireworks Effect",
+				"text" : "Click Effects",
 				"type" : "bool",
 				"value" : true
 			},
 			"fireworkstheme" : 
 			{
-				"condition" : "fireworks.value == true",
+				"condition" : "fireworks.value == true && bapointer.value == false",
 				"index" : 17,
 				"options" : 
 				[
@@ -266,7 +283,7 @@
 	"tags" : [ "Anime" ],
 	"title" : "Blue Archive | Shirasu Azusa",
 	"type" : "Web",
-	"version" : 12,
+	"version" : 13,
 	"visibility" : "public",
 	"workshopid" : "3495955811",
 	"workshopurl" : "steam://url/CommunityFilePage/3495955811"
