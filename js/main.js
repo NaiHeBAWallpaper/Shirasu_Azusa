@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'Azusa';
@@ -65,8 +66,8 @@ const AUDIO_DETAIL = [
 				"Well, I'm used to it. I don't mind it coming from you."
 			],
 			Chinese: [
-				"绝对是在开玩笑吧，老师。",
-				"……嘛，并，并不是从心底讨厌……。"
+				"你一定是在逗我吧？我看得出来的。",
+				"……唉，算了。老师逗我，我也没有不开心……"
 			],
 			TraditionalChinese: [
 				"你絕對在戲弄我吧，老師。",
@@ -75,31 +76,33 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"놀리려는 거지? 그렇지?",
 				"…뭐, 그래도 선생님이라면 상관없지만…."
-			]
+			],
+			Thai: ["ล้อเล่นใช่มั้ยเนี่ย? ใช่มั้ยนะ?","ถ้าเป็นคุณครูละก็ ฉันไม่ติดอะไรหรอก..."]
 		}
 	},
 	{
 		dialog: {
 			Japanese: [
-				"ううっ、可愛い……！",
-				"この子、ずっと会いたかった……！"
+				"ううっ、可愛い……！この子、ずっと会いたかった……！",
+				"ううっ、可愛い……！この子、ずっと会いたかった……！"
 			],
 			English: [
-				"Ugh! So cute!",
-				"It's just what I've always wanted."
+				"Ugh! So cute! It's just what I've always wanted.",
+				"Ugh! So cute! It's just what I've always wanted."
 			],
 			Chinese: [
-				"嗯，好可爱……！",
-				"好想一直拥有……！"
+				"嗯——！好可爱啊……！这个娃娃，我早就想要它了……！",
+				"嗯——！好可爱啊……！这个娃娃，我早就想要它了……！"
 			],
 			TraditionalChinese: [
-				"嗯，好可愛……！",
-				"好想一直擁有……！"
+				"唔唔，好可愛……！這孩子，我一直想見他……！",
+				"唔唔，好可愛……！這孩子，我一直想見他……！"
 			],
 			Korean: [
-				"너무 귀여워!",
-				"그게 내가 늘 원하는 거야"
-			]
+				"……으으응! 귀여워. 이 인형, 꼭 가지고 싶었던 아이야.",
+				"……으으응! 귀여워. 이 인형, 꼭 가지고 싶었던 아이야."
+			],
+			Thai: ["งือ...! น่ารักจังเลย อยากได้ตุ๊กตา แบบนี้มานานแล้ว","งือ...! น่ารักจังเลย อยากได้ตุ๊กตา แบบนี้มานานแล้ว"]
 		}
 	},
 	{
@@ -111,43 +114,45 @@ const AUDIO_DETAIL = [
 				"Heeheehee... Heehee..."
 			],
 			Chinese: [
-				"（笑）"
+				"诶嘿，诶嘿……诶嘿嘿……"
 			],
 			TraditionalChinese: [
 				"欸嘿，欸嘿嘿……欸嘿嘿……"
 			],
 			Korean: [
 				"에헤헤헤헤…. 헤헤헤…."
-			]
+			],
+			Thai: ["ฮิฮิฮิ... ฮิฮิ..."]
 		}
 	},
 	{
 		dialog: {
 			Japanese: [
-				"っ……",
-				"…そのっ、いや何でもない……。",
+				"っ………そのっ、いや何でもない……。",
+				"っ………そのっ、いや何でもない……。",
 				"（これ以上、距離を縮めるわけにはいかないのに……）"
 			],
 			English: [
-				"Huh?",
-				"Oh, it's nothing.",
+				"Huh? Oh, it's nothing.",
+				"Huh? Oh, it's nothing.",
 				"(I shouldn't say anything. It would only complicate things between us.)"
 			],
 			Chinese: [
-				"啊……",
-				"那个，也不是讨厌……。",
-				"（不能再缩短距离了……）"
+				"啊……呃，呃不，没，没什么……",
+				"啊……呃，呃不，没，没什么……",
+				"（……可不能再拉近和老师之间的距离了……）"
 			],
 			TraditionalChinese: [
-				"啊……",
-				"那個，也不是討厭……。",
+				"…………那個，不，沒什麼……",
+				"…………那個，不，沒什麼……",
 				"（明明，不能再拉近距離了……）"
 			],
 			Korean: [
-				"응?",
-				"아, 아무 것도 아냐.",
+				"…… …응? 아니, 아무것도 아니야.",
+				"…… …응? 아니, 아무것도 아니야.",
 				"(….말하지 않을 거야. 선생님을 곤란하게 하진 않을 거니까.)"
-			]
+			],
+			Thai: ["... หือ...? เปล่า ไม่มีอะไรหรอก","... หือ...? เปล่า ไม่มีอะไรหรอก","(...ไม่บอกหรอก ว่าฉันไม่ได้อยากทำให้ คุณครูลำบากใจน่ะ)"]
 		}
 	},
 	{
@@ -157,12 +162,12 @@ const AUDIO_DETAIL = [
 				"……先生も好き？本当に？"
 			],
 			English: [
-				"So where did you learn about this kind of place?",
-				"You saw it on a whim? I didn't expect you to like these sorts of things."
+				"So how did you learn about such a cute place?",
+				"You like these things? Really?"
 			],
 			Chinese: [
-				"但是，老师为什么在这么可爱的地方……？",
-				"……老师也喜欢吗？真的吗？"
+				"不过，老师怎么会知道这么可爱的地方？",
+				"……老师也喜欢？真的？"
 			],
 			TraditionalChinese: [
 				"不過，老師怎麼會知道這種可愛的地方？",
@@ -171,7 +176,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"그런데 어떻게 이런 귀여운 장소를 알고 있는 거야?",
 				"좋아한다고? 정말로?"
-			]
+			],
+			Thai: ["แต่ว่าทำไมคุณครู รู้จักสถานที่น่ารักๆ แบบนี้ได้ล่ะ?","อย่างนั้นเหรอ? ไม่คิดเลยว่าคุณครูจะชอบแบบนี้?"]
 		}
 	},
 	{
@@ -181,12 +187,12 @@ const AUDIO_DETAIL = [
 				"……まあ、別にどっちでも良いけど。"
 			],
 			English: [
-				"And don't treat me like a child!",
-				"Not that it matters at this point."
+				"Are you treating me like a child?",
+				"Well...not that I mind."
 			],
 			Chinese: [
-				"老师是不是把我当小孩子，在迁就我？",
-				"……嘛，不管怎么样都可以啦。"
+				"该不会把我当小孩，故意哄我的吧？",
+				"……唔，哄就哄吧。"
 			],
 			TraditionalChinese: [
 				"沒有把我當小孩子，在附和我吧？",
@@ -195,7 +201,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"지금 날 아이 취급하는 거야?",
 				"뭐…… 딱히 상관없지만."
-			]
+			],
+			Thai: ["อย่าทำเหมือน... ว่าฉันเป็นเด็กๆ สิ?","แต่ถึงอย่างนั้น มันก็ไม่เป็นไรหรอก"]
 		}
 	}
 ];
@@ -307,7 +314,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -477,6 +484,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -490,6 +507,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -499,7 +518,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 	window.dispatchEvent(new Event('languageChange'));
 }
 
@@ -810,7 +829,8 @@ function load(dynamicBinaryPath, dynamicAtlasPath) {
                             "예쁜 것 같아요!",
                             "이렇게 귀여운 붓을 본 적 없어!",
                             "이건 너무 어색해..."
-                        ]
+                        ],
+                        Thai: ["ความน่ารักก็ไม่ได้ผิดอะไรนี่!","มีตุ๊กตาน่ารักเต็มไปหมดก็ดีอยู่หรอก!!","...แต่ไม่รู้ทำไมถึงรู้สึกอายจัง"]
                     },
                     dialogPosition: {
                         x: introDialogX,
@@ -839,13 +859,13 @@ function load(dynamicBinaryPath, dynamicAtlasPath) {
                         track.play();
                         if (dialogBox) {
                             const selectedLanguage = window.selectedLanguage || 'Japanese';
-                            textbox.innerHTML = introAudioDetail.dialog[selectedLanguage][i];
+                            textbox.innerHTML = getSubtitleText(introAudioDetail.dialog, selectedLanguage, i);
                             textbox.style.opacity = 1;
 
                             // 添加语言切换监听
                             const updateText = () => {
                                 const currentLanguage = window.selectedLanguage || 'Japanese';
-                                textbox.innerHTML = introAudioDetail.dialog[currentLanguage][i];
+                                textbox.innerHTML = getSubtitleText(introAudioDetail.dialog, currentLanguage, i);
                             };
                             window.addEventListener('languageChange', updateText);
 
